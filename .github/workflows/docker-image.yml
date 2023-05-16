@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: |
          docker build . --file Dockerfile --tag "mc"
-         docker run 'mc'
+         docker run 'mc' -e EULA=TRUE
